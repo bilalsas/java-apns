@@ -41,7 +41,7 @@ import com.notnoop.apns.internal.Utilities;
  * Represents a builder for constructing Payload requests, as
  * specified by Apple Push Notification Programming Guide.
  */
-public class PayloadBuilder {
+public final class PayloadBuilder {
     private static final ObjectMapper mapper = new ObjectMapper();
 
     private final Map<String, Object> root;
@@ -100,6 +100,21 @@ public class PayloadBuilder {
      */
     public PayloadBuilder badge(final int badge) {
         aps.put("badge", badge);
+        return this;
+    }
+
+    /**
+     * Sets the mutable content
+     *
+     * @param mutable
+     * @return  this
+     */
+    public PayloadBuilder mutableContent(final boolean mutable) {
+        if (mutable) {
+            aps.put("mutable-content", 1);
+        } else {
+            aps.remove("mutable-content");
+        }
         return this;
     }
 
