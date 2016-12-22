@@ -14,10 +14,10 @@
     </parent>
 
     <scm>
-        <connection>scm:git:git://github.com/notnoop/java-apns.git</connection>
-        <developerConnection>scm:git:git@github.com:notnoop/java-apns.git</developerConnection>
-        <url>http://github.com/notnoop/java-apns</url>
-      <tag>apns-0.2.3</tag>
+        <connection>scm:git:git://github.com/bilalsas/java-apns.git</connection>
+        <developerConnection>scm:git:git@github.com:bilalsas/java-apns.git</developerConnection>
+        <url>http://github.com/bilalsas/java-apns</url>
+      <tag>apns-SHBNDN</tag>
   </scm>
 
     <properties>

@@ -122,13 +122,13 @@ public class ApnsServerStub {
                     if (in != null) {
                         in.close();
                     }
-                } catch (Exception _) {
+                } catch (Exception ex1) {
                 }
                 try {
                     if (gatewayOutputStream != null) {
                         gatewayOutputStream.close();
                     }
-                } catch (Exception _) {
+                } catch (Exception ex2) {
                 }
                 messages.release();
             }
