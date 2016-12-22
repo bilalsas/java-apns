@@ -41,7 +41,7 @@ import com.notnoop.apns.internal.Utilities;
  * Represents a builder for constructing Payload requests, as
  * specified by Apple Push Notification Programming Guide.
  */
-public final class PayloadBuilder {
+public class PayloadBuilder {
     private static final ObjectMapper mapper = new ObjectMapper();
 
     private final Map<String, Object> root;
